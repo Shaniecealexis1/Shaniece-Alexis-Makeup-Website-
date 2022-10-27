@@ -1,0 +1,396 @@
+body {
+	background: #c3adb9;	
+	font-family: "Times New Roman", serif;
+}
+
+* {/*star symbol means all HTML elements*/
+	box-sizing: border-box;/*Ref: https://www.w3schools.com/css/css3_box-sizing.asp*/
+	margin: 0;
+	padding: 0;
+}
+
+/*
+.ul .navagation .li {
+	font-size: 16px;
+	font-weight: 700PX;
+}
+*/
+
+nav {
+	min-height: 5vh;
+	background-color: #75616c;
+	
+	/*Centralization*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;	
+}
+
+/*------------------------*/
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	
+	display: inline-block;
+}
+
+nav ul li {
+	display: inline-block;
+	font-family: "Abhaya Libre Regular";
+	font-size: 18px;
+
+	/*dropdown menu*/
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	color: #c3adb9;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;  
+	font-size: larger;
+	font-family:"Abhaya Libre Regular";
+	letter-spacing: 2px;
+
+	text-transform: uppercase;
+}
+
+.active {
+	background-color: #967d8b;
+}
+
+nav ul li a:hover:not(.active) {
+	background-color: #967d8b;
+}
+
+/*Dropdown menu*/
+.dropdown {
+	background-color: #88707d;
+}
+
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;/*Animation*/
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover > ul, nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+
+ /*-----------------------*/
+ /*Set styles for form and inputs inside form*/
+ .search-form {
+	display: block;
+	text-align: center;
+	font-family: "Abhaya Libre Regular";
+	font-size: large;
+	color: #c3adb9;
+	letter-spacing: 1px;
+}
+
+.search-form input[type="submit"] {
+   padding: 5px 20px 5px 20px; 
+   background-color: #c3adb9;
+   transition: color 0.2s;
+}
+
+.search-form input:hover {
+	color: #c3adb9;
+}	
+
+ .search-form input[type="text"] {
+   padding: 5px 20px 5px 20px; 
+   color: #75616c;
+   position: relative;
+   left: 400;
+   background-color: #c3adb9;
+}
+
+
+/*--------------------*/
+header {
+	min-height: 10vh;
+	color: #c3adb9;
+	background-color: #75616c;
+	font-family:"Abhaya Libre Regular";
+	letter-spacing: 5px;
+	font-weight: bold;
+	font-size: x-large;
+	
+
+	/*Centralize the content inside this element both vertically and horizontally*/
+	display: block;
+	text-align: center;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+.bookNow {
+	border: none;
+	color: #c3adb9;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	
+}
+
+/*Set styles for the SLIDESHOW */
+/*Centralize the slideShowImage*/
+#slideShowImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 85px;
+	
+	/*Set the image height and width for smartphones*/
+	height: 700px;
+}
+
+/*-----------Map-----------*/
+.mapLink {
+	position: relative; 
+	padding-bottom: 0%;
+	padding-left: 0.5%;
+}
+
+/*-----------Audio-----------*/
+.audio {
+	position: relative; 
+	padding-bottom: 0%;
+	padding-left: 0.5%;
+}
+
+/*-----------------------*/
+
+.iframe-container {
+	position: relative; 
+	padding-bottom: 0%;
+	padding-left: 0.5%;
+}
+
+
+/*Instagram Icon Link*/
+.social-icon {
+	color: #c3adb9;
+	transition: color 0.2s;
+
+
+}
+
+.social-icon:hover {
+	color:white;
+}
+
+.instagramLink {
+	padding-left: 50px;
+	height: auto;
+	width: 1px;
+
+}
+
+/*************************/
+main {
+	min-height: 80vh;
+	background: #c3adb9;
+	background-position: center;
+
+}
+
+/******Pricing Webpage*****/
+
+.pricingForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0%;
+}
+
+/******Policies Webpage*****/
+.policiesForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.indexImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/******Shaniece Alexis Makeup Title*****/
+.titleSAM {
+	text-align: center;
+}
+
+/*******Gallery Webpage*********/
+/*-----------------------*/
+/*Set style for 3 columns*/
+.container-1 {	
+	/*Use display: flex to change the layout*/
+	display: flex;
+	flex-direction: column;	
+ }
+ 
+ .topic-box {
+	margin: 10px;
+	padding: 30px;
+	border: 3px solid #75616c;
+	
+	/*Create box equal size*/
+	flex: 1;
+ }
+ 
+ .container-1 .topic-box h3 {	 
+	 text-align: center;
+	 font-size: 40px;
+	 margin-bottom: 20px;
+	 color: #75616c;
+ }
+ 
+ .container-1 .topic-box p {
+	  margin-top: 20px;
+	  text-align: center;
+	  color: #75616c;
+	  line-height: 24px;
+ }
+ 
+ .container-1 .topic-box img {
+	 /*Centralize the image*/
+	 display: block;	 
+	 margin-left: auto;
+	 margin-right: auto;
+	 color: #75616c;
+	 
+	 /*Make the image responsive*/
+	 height: 250px;
+	 width: auto;
+ }
+ 
+ /*-----------------------*/
+
+  /*Set styles for the "READ MORE" button gor Gallery Webpage*/
+  .read-more-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	 
+
+	border-radius: 5%;
+	background-color: #75616c;
+	margin-top: 20px;
+	padding: 5px 20px 5px 20px; 
+ }
+ 
+ /*-----------------------*/
+
+/******Natural Glam Webpage Image*****/
+.NGImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 33.33%;
+	padding: 5px;
+	padding-top: 4%;
+}
+
+/******Full Glam Webpage Image*****/
+.image-card {
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	color: #75616c;
+	font-weight: bold;
+	font-size: larger;
+}
+
+.image-card img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.FGImage {
+	justify-content: center;
+	align-items: center;
+	display: inline-block;
+	padding-left: 17%;
+}
+
+footer {
+	height: 6vh;
+	background: #75616c;
+
+	/*Centralize the content inside this element both vertically and horizontally*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	text-align: center;
+	color: #c3adb9;
+	font-family: "Abhaya Libre Regular";
+	letter-spacing: 3px;
+}
+
+
+
+
+
+/*--------------------------------------------*/
+/*THIS STYLES ARE FOR SMALL DEVICES*/
+@media only screen and (max-width: 600px) {
+
+	nav ul li {
+		display: block;
+	}
+
+	nav {
+		flex-direction: column;
+	}
+
+	.image-card {
+		width: 90%;
+	}
+
+	#slideShowImage {
+		/*Set the image height and width*/
+		height: 400px;
+	}
+	
+ }
+ 
+ *----------------------------------------------------------------*/
+ /*Else: all screen bigger than 768px
+   768px < screen
+   CSS Styles for big screens 
+ */
+@media only screen and (min-width: 769px) {
+	#slideShowImage {
+		/*Set the image height and width*/
+		height: 600px;
+	}	
+ }
+
+ 
+
+
